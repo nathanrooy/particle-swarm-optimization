@@ -14,7 +14,7 @@ import math
 
 #--- COST FUNCTION ------------------------------------------------------------+
 
-# Function we are attempting to optimize (minimize)
+# function we are attempting to optimize (minimize)
 def func1(x):
     total=0
     for i in range(len(x)):
