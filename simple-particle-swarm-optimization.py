@@ -59,7 +59,7 @@ class Particle:
             self.velocity_i[i]=w*self.velocity_i[i]+vel_cognitive+vel_social
 
     # update the particle position based off new velocity updates
-    def update_position(self):
+    def update_position(self,bounds):
         for i in range(0,num_dimensions):
             self.position_i[i]=self.position_i[i]+self.velocity_i[i]
             
@@ -100,7 +100,7 @@ class PSO():
             # cycle through swarm and update velocities and position
             for j in range(0,num_particles):
                 swarm[j].update_velocity(pos_best_g)
-                swarm[j].update_position()
+                swarm[j].update_position(bounds)
             i+=1
 
         # print final results
