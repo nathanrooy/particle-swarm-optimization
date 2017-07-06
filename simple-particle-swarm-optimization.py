@@ -92,7 +92,7 @@ class PSO():
             for j in range(0,num_particles):
                 swarm[j].evaluate(costFunc)
 
-                # determine if current particle is the best (globably)
+                # determine if current particle is the best (globally)
                 if swarm[j].err_i<err_best_g or err_best_g==-1:
                     pos_best_g=list(swarm[j].position_i)
                     err_best_g=float(swarm[j].err_i)
