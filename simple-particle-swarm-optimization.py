@@ -2,7 +2,8 @@
 #
 #   Nathan A. Rooy
 #   Simple Particle Swarm Optimization (PSO) with Python
-#   July, 2016
+#   Last update: 2018-JAN-26
+#	Python 3.6
 #
 #------------------------------------------------------------------------------+
 
@@ -72,7 +73,7 @@ class Particle:
                 self.position_i[i]=bounds[i][0]
         
 class PSO():
-    def __init__(self,costFunc,x0,bounds,num_particles,maxiter):
+    def __init__(self, costFunc, x0, bounds, num_particles, maxiter, verbose=False):
         global num_dimensions
 
         num_dimensions=len(x0)
@@ -87,7 +88,7 @@ class PSO():
         # begin optimization loop
         i=0
         while i<maxiter:
-            #print i,err_best_g
+            if verbose: print(f'iter: {i:>4d}, best solution: {err_best_g:10.6f}')
             # cycle through particles in swarm and evaluate fitness
             for j in range(0,num_particles):
                 swarm[j].evaluate(costFunc)
@@ -104,9 +105,9 @@ class PSO():
             i+=1
 
         # print final results
-        print 'FINAL:'
-        print pos_best_g
-        print err_best_g
+        print('\nFINAL SOLUTION:')
+        print(f'   > {pos_best_g}')
+        print(f'   > {err_best_g}\n')
 
 if __name__ == "__PSO__":
     main()
@@ -115,6 +116,6 @@ if __name__ == "__PSO__":
 
 initial=[5,5]               # initial starting location [x1,x2...]
 bounds=[(-10,10),(-10,10)]  # input bounds [(x1_min,x1_max),(x2_min,x2_max)...]
-PSO(func1,initial,bounds,num_particles=15,maxiter=30)
+PSO(func1, initial, bounds, num_particles=15, maxiter=30, verbose=True)
 
 #--- END ----------------------------------------------------------------------+
