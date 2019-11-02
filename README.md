@@ -1,6 +1,6 @@
 # Particle Swarm Optimization with Python
 
-<a target="_blank" href="https://en.wikipedia.org/wiki/Particle_swarm_optimization">Particle swarm optimization</a> (PSO) is amazing and I created a series of tutorials that cover the topic using Python. The first (pso-simple) is comprised of a bare bones implementation and is useful to anyone new to PSO and looking to get a good understanding of how it works. The tutorial can be found here: https://nathanrooy.github.io/posts/2016-08-17/simple-particle-swarm-optimization-with-python/
+<a target="_blank" href="https://en.wikipedia.org/wiki/Particle_swarm_optimization">Particle swarm optimization</a> (PSO) is amazing and I created a series of tutorials that cover the topic using Python. The first (pso-simple) is comprised of a bare bones implementation and is useful for anyone new to PSO and looking to get a good understanding of how it works. The tutorial can be found here: https://nathanrooy.github.io/posts/2016-08-17/simple-particle-swarm-optimization-with-python/
 
 The second version (pso-advanced) is still a work in progress...
 
