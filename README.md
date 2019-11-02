@@ -15,7 +15,7 @@ pip install git+https://github.com/nathanrooy/particle-swarm-optimization
 ### particle swarm optimization - simple
 Once you have completed the installation, usage is similar to that of other common optimization frameworks.
 ```py
-from pso import pso_simple
+>>> from pso import pso_simple
 ```
 Next, you need to specify a cost fucntion. I included the sphere function for example purposes, but you'll probably end up using your own.
 ```py
