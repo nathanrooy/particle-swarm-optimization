@@ -8,7 +8,7 @@ The second version (pso-advanced) is still a work in progress...
 ## Installation
 You can either download/clone this repo and use as is, or you can pip install it with the following command:
 ```py
-pip install git+https://github.com/nathanrooy/Particle-Swarm-Optimization-with-Python
+pip install git+https://github.com/nathanrooy/particle-swarm-optimization
 ```
 
 ## Usage
