@@ -23,12 +23,12 @@ Next, you need to specify a cost fucntion. I included the sphere function for ex
 ```
 Next, let's specify some bounds and an initial starting location:
 ```py
-initial=[5,5]               # initial starting location [x1,x2...]
-bounds=[(-10,10),(-10,10)]  # input bounds [(x1_min,x1_max),(x2_min,x2_max)...]
+>>> initial=[5,5]               # initial starting location [x1,x2...]
+>>> bounds=[(-10,10),(-10,10)]  # input bounds [(x1_min,x1_max),(x2_min,x2_max)...]
 ```
 Lastly, lets minimize this thing!
 ```py
-pso_simple.minimize(sphere, initial, bounds, num_particles=15, maxiter=30, verbose=True)
+>>> pso_simple.minimize(sphere, initial, bounds, num_particles=15, maxiter=30, verbose=True)
 ```
 The output of which should look like this:
 ```py
@@ -66,10 +66,7 @@ iter:   29, best solution:   0.000001
 FINAL SOLUTION:
    > [0.0010272779593734505, -0.00023254128511081273]
    > 1.109375455095469e-06
-```
-
-
-
+``
 
 ### particle swarm optimization - advanced
 (coming soon...)
