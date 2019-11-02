@@ -66,7 +66,7 @@ iter:   29, best solution:   0.000001
 FINAL SOLUTION:
    > [0.0010272779593734505, -0.00023254128511081273]
    > 1.109375455095469e-06
-``
+```
 
 ### particle swarm optimization - advanced
 (coming soon...)
