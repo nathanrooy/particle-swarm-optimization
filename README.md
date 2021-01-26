@@ -1,4 +1,7 @@
 # Particle Swarm Optimization with Python
+[![gh-actions-ci](https://img.shields.io/github/workflow/status/nathanrooy/particle-swarm-optimization/ci?style=flat-square)](https://github.com/nathanrooy/particle-swarm-optimization/actions?query=workflow%3Aci)
+[![GitHub license](https://img.shields.io/github/license/nathanrooy/particle-swarm-optimization?style=flat-square)](https://github.com/nathanrooy/particle-swarm-optimization/blob/master/LICENSE)
+[![codecov](https://img.shields.io/codecov/c/github/nathanrooy/particle-swarm-optimization.svg?style=flat-square)](https://codecov.io/gh/nathanrooy/particle-swarm-optimization)
 
 <a target="_blank" href="https://en.wikipedia.org/wiki/Particle_swarm_optimization">Particle swarm optimization</a> (PSO) is amazing and I created a series of tutorials that cover the topic using Python. The first (pso-simple) is comprised of a bare bones implementation and is useful for anyone new to PSO and looking to get a good understanding of how it works. The tutorial can be found here: https://nathanrooy.github.io/posts/2016-08-17/simple-particle-swarm-optimization-with-python/
 
