@@ -9,14 +9,13 @@
 
 #--- IMPORT DEPENDENCIES ------------------------------------------------------+
 
-from __future__ import division
 from random import random
 from random import uniform
 
 #--- MAIN ---------------------------------------------------------------------+
 
 class Particle:
-    def __init__(self,x0):
+    def __init__(self, x0):
         self.position_i=[]          # particle position
         self.velocity_i=[]          # particle velocity
         self.pos_best_i=[]          # best position individual
@@ -97,10 +96,11 @@ def minimize(costFunc, x0, bounds, num_particles, maxiter, verbose=False):
         i+=1
 
     # print final results
-    print('\nFINAL SOLUTION:')
-    print(f'   > {pos_best_g}')
-    print(f'   > {err_best_g}\n')
+    if verbose:
+        print('\nFINAL SOLUTION:')
+        print(f'   > {pos_best_g}')
+        print(f'   > {err_best_g}\n')
 
-    pass
+    return err_best_g, pos_best_g
 
 #--- END ----------------------------------------------------------------------+
